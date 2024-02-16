@@ -8,7 +8,8 @@ import Header from './components/Header';
 
 
 
-function App() {
+function App() 
+{
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -20,6 +21,7 @@ function App() {
       });
   }, []);
 
+
   function addTransaction(newTransaction) {
     setTransactions([...transactions, newTransaction]);
   }
@@ -30,7 +32,8 @@ function App() {
       )
     : [];
 
-  function deleteTransaction(id) {
+  function deleteTransaction(id) 
+  {
     const updatedTransactions = transactions.filter((transaction) => transaction.id !== id);
     setTransactions(updatedTransactions);
   }

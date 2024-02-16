@@ -1,17 +1,17 @@
 # THE ROYAL BANK OF FLATIRON
 
 ## Project DEscription 
-Flatiron Bank App is a React-based web app that displays a list of your recent bank transaction. You can also filter the transactions by Desscription, Category, Amount and Date.
+The Royal Bank of Flatiron Bank App is a React-based web app that is going to display a list of your recent bank transactions carried out. The user can also filter out the transactions basing on Date, Amount transacted,Description as well as Category. 
 
 ### Techonoligies USed
 - React.js
 
 ### Author
-Jonah Kayiwa.
+Jonah Kayiwa
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

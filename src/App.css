@@ -1,38 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap");
+:root {
+  --dark-one: #333;
+  --dark-two: #7a7a7a;
+  --dark-three: #0f0c16;
+  --main-color: #581a70b9;
+  --color-white: #fff;
+  --light-two: #f9fafb;
+  --light-three: #f6f7fb;
+  --color-success: #7db91d;
+  --color-danger: #ff0000;
+  --color-warning: #f7911e;
+  --color-primary: #a4caf5;
+  --color-dark: #5f637a;
+  --color-dark-variant: #677483;
+  --color-dark-variant-2:#282c34;
+  --color-info-dark: #7d8da1;
+  --color-background: #f6f6f9;
+  --color-light: rgba(122, 133, 231, 0.678);
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+
+
+}
 .App {
-  text-align: center;
+  width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
 }
+.app h1{
+  font-weight: 800;
+  font-size: 1.8rem;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--color-dark-variant-2);
+  min-height: 8vh;
+  align-items: center;
+
+  font-size: 1.3rem;
+  color: #fff; /* Text color for the header */
+  padding: 20px;
+  position: relative;
+}
+
+.App-header h1{
+  position: absolute;
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+} 
+
+
+.transaction-form {
+  background-color: var(--color-dark-variant-2);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.transaction-form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-form button{
+  background-color: var(--color-success);
+  cursor: pointer;
+}
+.transaction-form button :hover {
+  color: var(--color-warning);
+
+}
+.App .transaction-table{
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.App .transaction-table th, td{
+  border: 1px solid var(--color-info-dark);
+  padding: 8px;
+  text-align: left;
+}
+
+.transaction-table button{
+  cursor: pointer;
+  background-color: var(--color-info-dark);
+
+}
+
+.transaction-table button:hover{
+  background-color: var(--color-danger) ;
+
+}
+
+.transaction-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.search-bar {
+  padding: 10px;
 }

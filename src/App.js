@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
 import { useState, useEffect } from "react";
-import TransactionForm from './components/FormTransaction';
-import TableTransaction from './components/TableTransaction';
-import SearchBar from './components/SearchBar';
-import Header from './components/Header';
+import TransactionForm from './components/formTransaction';
+import TableTransaction from './components/tableTransaction';
+import SearchBar from './components/searchBar';
+import Header from './components/header';
 
 
 
-function App() 
-{
+function App() {
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -21,7 +20,6 @@ function App()
       });
   }, []);
 
-
   function addTransaction(newTransaction) {
     setTransactions([...transactions, newTransaction]);
   }
@@ -32,8 +30,7 @@ function App()
       )
     : [];
 
-  function deleteTransaction(id) 
-  {
+  function deleteTransaction(id) {
     const updatedTransactions = transactions.filter((transaction) => transaction.id !== id);
     setTransactions(updatedTransactions);
   }

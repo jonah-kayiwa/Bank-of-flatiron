@@ -1,5 +1,5 @@
 import React from "react";
-import TableRowTransaction from "./TableRowTransaction";
+import TableRowTransaction from "./tableRowTransaction";
 
 function TableTransaction({transactions, onDelete}) {
     return(

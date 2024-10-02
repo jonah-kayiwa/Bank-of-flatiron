@@ -1,9 +1,9 @@
 # THE ROYAL BANK OF FLATIRON
 
-## Project DEscription 
+## Project Description 
 The Royal Bank of Flatiron Bank App is a React-based web app that is going to display a list of your recent bank transactions carried out. The user can also filter out the transactions basing on Date, Amount transacted,Description as well as Category. 
 
-### Techonoligies USed
+### Techonoligies Used
 - React.js
 
 ### Author
